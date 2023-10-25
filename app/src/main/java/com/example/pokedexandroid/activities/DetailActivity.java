@@ -71,10 +71,10 @@ public class DetailActivity extends AppCompatActivity {
                         Sprites spritesList = pokemon.getSprites();
                         nombre.setText(name);
                         numeroPokemon.setText("#" + idPokemon);
-                        tipo.setText("Tipo: " + obtenerTipos(pokemon.getTypes()));
-                        peso.setText("Peso: " + String.valueOf(pokemon.getWeight()));
-                        abilities.setText("Habilidades: " + obtenerHabilidades(pokemon.getAbilities()));
-                        movimientos.setText("Movimientos: " + obtenerMovimientos(pokemon.getMoves()));
+                        tipo.setText(obtenerTipos(pokemon.getTypes()));
+                        peso.setText(String.valueOf(pokemon.getWeight()));
+                        abilities.setText(obtenerHabilidades(pokemon.getAbilities()));
+                        movimientos.setText(obtenerMovimientos(pokemon.getMoves()));
 
                         Glide.with(getApplication()).load(imageUrl)
                                 .centerCrop()
