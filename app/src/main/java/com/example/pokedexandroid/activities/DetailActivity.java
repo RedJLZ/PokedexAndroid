@@ -72,7 +72,7 @@ public class DetailActivity extends AppCompatActivity {
                         nombre.setText(name);
                         numeroPokemon.setText("#" + idPokemon);
                         tipo.setText(obtenerTipos(pokemon.getTypes()));
-                        peso.setText(String.valueOf(pokemon.getWeight()));
+                        peso.setText("Peso: "+String.valueOf(pokemon.getWeight()));
                         abilities.setText(obtenerHabilidades(pokemon.getAbilities()));
                         movimientos.setText(obtenerMovimientos(pokemon.getMoves()));
 
